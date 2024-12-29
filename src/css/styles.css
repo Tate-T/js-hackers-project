@@ -6,7 +6,18 @@
 */
 @import url('./reset.css');
 @import url('./vite-promo.css');
-
+@import url('./header.css');
+@import url('./check-birthday.css');
+@import url('./guess-numder.css');
+@import url('./rps.css');
+@import url('./calculator.css');
+@import url('./time-calculator.css');
+@import url('./google-dino.css');
+@import url('./football.css');
+@import url('./biggest-number.css');
+@import url('./team.css');
+@import url('./choose-scientist.css');
+@import url('./footer.css');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;

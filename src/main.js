@@ -1,0 +1,12 @@
+import('./js/header.js');
+import('./js/check-birthday.js');
+import('./js/guess-numder.js');
+import('./js/rps.js');
+import('./js/calculator.js');
+import('./js/time-calculator.js');
+import('./js/google-dino.js');
+import('./js/football.js');
+import('./js/biggest-number.js');
+import('./js/team.js');
+import('./js/choose-scientist.js');
+import('./js/footer.js');
