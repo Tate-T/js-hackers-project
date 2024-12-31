@@ -1,0 +1,58 @@
+<header>
+  <div class="container">
+    <div class="header-cont">
+      <div class="header-left">
+        <a class="header__logo" href="#">
+          <svg class="header__icon" width="93" height="38">
+            <use href="../img/icons.svg#header-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Інтерактив
+                <svg class="header__arrow" width="11" height="6">
+                  <use href="../img/icons.svg#arrow-down"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Наша команда</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Контакти </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <div class="headr__switches standby">
+          <button class="header__swith" id="light-mode">
+            <picture>
+              <source
+                srcset="
+                  ../img/sun@1x-desctop.webp 1x,
+                  ../img/sun@1x-desctop.webp 2x
+                "
+              />
+              <img class="header__sun" src="../img/sun@1x-desctop.webp" />
+            </picture>
+          </button>
+          <button class="header__swith" id="dark-mode">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="moon" src="../img/moon@1x-desctop.webp" />
+            </picture>
+          </button>
+        </div>
+        <p class="header__text">Вітаємо, User!</p>
+      </div>
+    </div>
+  </div>
+</header>
