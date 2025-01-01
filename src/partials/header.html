@@ -27,8 +27,8 @@
         </nav>
       </div>
       <div class="header__right">
-        <div class="headr__switches standby">
-          <button class="header__swith" id="light-mode">
+        <button class="header__switch standby">
+          <div class="header__checked" id="light-mode">
             <picture>
               <source
                 srcset="
@@ -38,19 +38,17 @@
               />
               <img class="header__sun" src="../img/sun@1x-desctop.webp" />
             </picture>
-          </button>
-          <button class="header__swith" id="dark-mode">
-            <picture>
-              <source
-                srcset="
-                  ../img/moon@1x-desctop.webp 1x,
-                  ../img/moon@1x-desctop.webp 2x
-                "
-              />
-              <img class="moon" src="../img/moon@1x-desctop.webp" />
-            </picture>
-          </button>
-        </div>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ../img/moon@1x-desctop.webp 1x,
+                ../img/moon@1x-desctop.webp 2x
+              "
+            />
+            <img class="moon" src="../img/moon@1x-desctop.webp" />
+          </picture>
+        </button>
         <p class="header__text">Вітаємо, User!</p>
       </div>
     </div>
