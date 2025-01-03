@@ -1,0 +1,32 @@
+.dino-title{
+    color: #000;
+font-family: Montserrat Alternates;
+font-size: 16px;
+font-weight: 400;
+}
+
+.game-container {
+    position: relative;
+    width: 720px;
+    height: 241px;
+    background-color: #fff;
+    border: 1px solid #616161;
+  }
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+  }
+  
+  .cactus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    background-color: #0a0;
+  }
