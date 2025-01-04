@@ -3,8 +3,10 @@
     font-family: Montserrat Alternates;
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
 }
 .check-birthday-title{
+    text-align: center;
     color: #000;
 font-family: Montserrat Alternates;
 font-size: 16px;
@@ -16,6 +18,7 @@ font-weight: 400;
     font-family: Montserrat Alternates;
     font-size: 12px;
     font-weight: 400;
+   
 }
 #invalid-text{
     color: #900;
@@ -24,8 +27,27 @@ font-family: Montserrat Alternates;
 font-size: 12px;
 font-weight: 400;
 }
-.check-birthday-button{
-    padding: 10px;
-    border-radius: 0px 20px 20px 0px;
-background: #000;
+.check-birthday-button{    
+margin-left: -40px;
+padding: 13px;
+height: 39px;
+background-color: #000;
+width: 35px;
+border-radius: 0px 20px 20px 0px;
+}
+.check-birthday-input{
+    display: inline-flex;
+padding: 10px 45px 10px 10px;
+align-items: flex-start;
+gap: 10px;
+    border-radius: 20px;
+background: #D7D7D7;
+border: none;
+}
+
+.check-birthday{
+    max-height: 163px;
+}
+.check-birthday-img{
+    fill: white;
 }

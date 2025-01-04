@@ -3,6 +3,12 @@
 font-family: Montserrat Alternates;
 font-size: 16px;
 font-weight: 400;
+text-align: center;
+}
+
+.game-platfor-dino{
+  display: flex;
+  justify-content: center;
 }
 
 .game-container {
@@ -30,3 +36,14 @@ font-weight: 400;
     height: 40px;
     background-color: #0a0;
   }
+.cloud{
+
+  width: 20px;
+  height: 40px;
+  background-color: rgb(125, 133, 125);
+}
+
+.dino-cloud{
+  display: flex;
+  justify-content: center;
+}
