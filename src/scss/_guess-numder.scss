@@ -1,36 +1,66 @@
-.gn__title {
-  color: #000;
-  font-family: 'Montserrat Alternates';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+.guess-number {
+  padding-top: 36px;
+  padding-bottom: 36px;
 
-.gn__number {
-  display: inline-flex;
-  padding: 10px 45px 10px 10px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 20px;
-  background: #d7d7d7;
-}
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: 'Montserrat Alternates';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 35px;
+    margin-bottom: 36px;
+  }
 
-.gn__btn-guess {
-  display: inline-flex;
-  padding: 10px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 0px 20px 20px 0px;
-  background: #000;
-}
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
 
-.gn__message {
-//   color: #039900;
-  text-align: right;
-  font-family: 'Montserrat Alternates';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  &__number {
+    padding-left: 200px;
+    margin-right: 202px;
+  }
+
+  &__number-input {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 150px;
+    border-radius: 20px;
+    background: #d7d7d7;
+    padding: 10px 45px 10px 10px;
+    gap: 10px;
+    border: none;
+    // box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &__change {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 481px;
+    left: 582px;
+  }
+
+  &__btn-guess {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 11px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background: #000;
+  }
+
+  &__message {
+    color: #039900;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 200px;
+  }
 }

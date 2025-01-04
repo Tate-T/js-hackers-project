@@ -1,10 +1,14 @@
-<div class="container">
-  <h2 class="gn__title">Вгадай число, яке загадав комп’ютер</h2>
-  <form class="gn__number">
-    <input type="number" placeholder="Введіть число" class="gn__number-input" />
+<div class="container guess-number">
+  <h3 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h3>
+  <div class="guess-number__wrap">
+     <form class="guess-number__number">
+    <input type="number" placeholder="Введіть число" class="guess-number__number-input" />
+    <span class="guess-number__change">
+      <button type="submit" class="guess-number__btn-guess">
+        <img src="../img/icons.svg#search" alt="search" width= "15" height= "15" class="guess-number__search">
+      </button>
+    </span>
   </form>
-  <button class="gn__btn-guess">
-    <img src="../img/icons.svg#search" alt="search" width= "15" height= "15" class="gn__check-number">
-  </button>
-  <p class="gn__message">Введіть число</p>
+  <p class="guess-number__message">Вітаю, ви вгадали число! (number)</p>
+  </div>
 </div>
