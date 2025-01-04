@@ -1,0 +1,39 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./_reset.scss');
+@import url('./_container.scss');
+@import url('./_vite-promo.scss');
+@import url('./_header.scss');
+@import url('./_check-birthday.scss');
+@import url('./_guess-numder.scss');
+@import url('./_rps.scss');
+@import url('./_calculator.scss');
+@import url('./_time-calculator.scss');
+@import url('./_google-dino.scss');
+@import url('./_football.scss');
+@import url('./_biggest-number.scss');
+@import url('./_team.scss');
+@import url('./_choose-scientist.scss');
+@import url('./_footer.scss');
+@import url('./_vars.scss');
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
