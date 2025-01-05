@@ -1,7 +1,7 @@
-<header>
+<header class="header">
   <div class="container">
-    <div class="header-cont">
-      <div class="header-left">
+    <div class="header__cont">
+      <div class="header__left">
         <a class="header__logo" href="#">
           <svg class="header__icon" width="93" height="38">
             <use href="../img/icons.svg#header-logo"></use>
@@ -10,12 +10,25 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="" class="header__link"
-                >Інтерактив
+              <button type="button" class="header__btn">
+                Інтерактив
                 <svg class="header__arrow" width="11" height="6">
                   <use href="../img/icons.svg#arrow-down"></use>
                 </svg>
-              </a>
+              </button>
+              <div class="article__overlay is-hidden">
+                <ul class="header__variants">
+                  <li class="header__variant">
+                    <button class="header__choice">Числовий</button>
+                  </li>
+                  <li class="header__variant">
+                    <button class="header__choice">Ігровий</button>
+                  </li>
+                  <li class="header__variant">
+                    <button class="header__choice">Ознайомчий</button>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="header__item">
               <a href="" class="header__link">Наша команда</a>
@@ -28,7 +41,7 @@
       </div>
       <div class="header__right">
         <button class="header__switch standby">
-          <div class="header__checked" id="light-mode">
+          <div class="header__checked">
             <picture>
               <source
                 srcset="
@@ -39,15 +52,6 @@
               <img class="header__sun" src="../img/sun@1x-desctop.webp" />
             </picture>
           </div>
-          <picture>
-            <source
-              srcset="
-                ../img/moon@1x-desctop.webp 1x,
-                ../img/moon@1x-desctop.webp 2x
-              "
-            />
-            <img class="moon" src="../img/moon@1x-desctop.webp" />
-          </picture>
         </button>
         <p class="header__text">Вітаємо, User!</p>
       </div>

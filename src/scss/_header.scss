@@ -1,0 +1,140 @@
+.header {
+    padding: 21px 0;
+    background: #FFF;
+
+    &__cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 81px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__item:first-child {
+        position: relative;
+    }
+
+    &__btn {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+    }
+
+    &__arrow {
+        fill: none;
+        stroke-width: 0.75px;
+        stroke: #000;
+    }
+
+    &__variants {
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-radius: 0px 0px 20px 20px;
+        background: #FFF;
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &__variant {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__choice {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        width: 160px;
+        height: 35px;
+
+    }
+
+    .is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    &__variant:last-child &__choice {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    &__choice:hover,
+    &__choice:focus {
+        background-color: #F1F1F1;
+    }
+
+    &__link {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 51px;
+    }
+
+    &__switch {
+        border-radius: 11px;
+        background: #7A7A7A;
+        display: flex;
+        border: none;
+        gap: 6px;
+        padding: 0;
+        width: 40px;
+    }
+
+    &__checked {
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        border: 0.5px solid #000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        color: #000;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
