@@ -1,0 +1,97 @@
+.time-calculator {
+    padding: 36px 0;
+    position: relative;
+  
+    &-title {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &-text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &-div {
+      position: relative;
+      gap: 33px;
+      margin-top: 36px;
+      margin-right: 92px;
+    }
+  
+    &-input {
+      position: relative;
+      background: #d7d7d7;
+      border: none;
+      box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #7e7e7e;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+      width: 170px;
+      padding: 10px 45px 10px 10px;
+      border-radius: 20px;
+  
+      &:hover {
+       
+        background-color: white;
+      }
+  
+      &:focus {
+        
+        background-color: white;
+      }
+    }
+  
+    &-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  
+    &-button {
+      position: absolute;
+      top: 0;
+      left: 433px;
+      width: 35px;
+      height: 34.6px;
+      border-radius: 0px 20px 20px 0px;
+      background: #000;
+      padding-top: 5px;
+      padding-left: 5px;
+      cursor: pointer;
+    }
+  
+    &-input:has(+ .time-calculator-button:hover) {
+      
+      background-color: white;
+    }
+  
+
+  
+  
+  
+    &-svg {
+      stroke: white;
+    }
+  
+    &-dot {
+      width: 100px;
+      height: 0;
+      border: dashed black 0.5px;
+      margin-right: 100px;
+    }
+  
+    &-time {
+      position: absolute;
+      top: 9.5px;
+      left: 630px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+
+  }
+  
