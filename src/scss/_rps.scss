@@ -1,71 +1,129 @@
 .rps {
-    padding: 36px 0;
-    position: relative;
-  
-    &-title {
-      text-align: center;
+  padding-bottom: 36px;
+  position: relative;
+
+  &__title {
+      color: black;
+      font-family: "Montserrat Alternates";
       font-size: 16px;
+      font-style: normal;
       font-weight: 400;
       line-height: normal;
-    }
-  
-    &-ul{
+      text-align: center;
+      margin-bottom: 46px;
+  }
 
+  &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 36px;
       gap: 38px;
-      padding: 36px 0;
-    }
-  
-    &-elemt {
-      width: 60px;
-      height: 60px;
-      padding: 10px;
-      border-radius: 20px;
-      background-color: black;
-      transition: box-shadow, color, background-color, outline, 
+  }
 
-    }
-  
-    &-image {
+  &__button {
+      padding: 10px;
+      background-color: #000;
+      border-radius: 20px;
+  }
+
+  &__img {
       width: 40px;
       height: 40px;
-    }
-  
-    &-text {
-      text-align: center;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: normal;
-    }
-  
-    &-button {
-      color: #fff;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: normal;
-      width: 242px;
-      height: 35px;
-      border-radius: 20px;
-      background-color: black;
-      display: block;
-      margin: 36px auto 0;
-      cursor: pointer;
-      transition: box-shadow, color, background-color, border, 
-  
+  }
 
-    }
-  
-    &-paragraph {
-      position: absolute;
-      top: 92px;
-      left: calc(50% + 230px);
-    }
-  
-    &-result {
+  &__result {
+      color: #039900;
       font-size: 12px;
       font-weight: 400;
-      line-height: 170%;
-    }
-  
+      text-align: center;
+      margin-bottom: 36px;
+  }
+
+  &__btn {
+      color: #FFF;
+      font-family: "Montserrat Alternates";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-radius: 20px;
+      background: #000;
+      padding: 10px 20px;
+      gap: 10px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+      width: max-content;
+  }
+
+  &__line {
+      width: 536px;
+      height: 0px;
+      stroke-width: 1px;
+      stroke: #000;
+      margin: 0 auto;
+  }
+  &-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &-ul{
+
+    gap: 38px;
+    padding: 36px 0;
+  }
+
+  &-elemt {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    transition: box-shadow, color, background-color, outline, 
 
   }
-  
+
+
+
+  &-text {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &-ComputerC {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    width: 242px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: black;
+    display: block;
+    margin: 36px auto 0;
+    cursor: pointer;
+    transition: box-shadow, color, background-color, border, 
+
+
+  }
+
+  &-div {
+    position: absolute;
+    top: 92px;
+    left: calc(50% + 230px);
+  }
+
+  &-result {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 170%;
+  }
+
+
+}
+
