@@ -10,3 +10,4 @@ import('./js/biggest-number.js');
 import('./js/team.js');
 import('./js/choose-scientist.js');
 import('./js/footer.js');
+import('./js/modal.js');

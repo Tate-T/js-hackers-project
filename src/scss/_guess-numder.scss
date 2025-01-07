@@ -28,21 +28,21 @@
   &__number-input {
     display: inline-flex;
     align-items: flex-start;
-    width: 150px;
+    width: 210px;
     border-radius: 20px;
     background: #d7d7d7;
     padding: 10px 45px 10px 10px;
     gap: 10px;
     border: none;
-    // box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   &__change {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 481px;
-    left: 582px;
+    top: 386px;
+    left: 587px;
   }
 
   &__btn-guess {
@@ -52,6 +52,7 @@
     border-radius: 0px 20px 20px 0px;
     border: none;
     background: #000;
+    stroke: #fff;
   }
 
   &__message {

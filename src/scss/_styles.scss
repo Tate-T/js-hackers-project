@@ -20,6 +20,7 @@
 @import url('./_choose-scientist.scss');
 @import url('./_footer.scss');
 @import url('./_vars.scss');
+@import url('./_modal.scss');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -36,4 +37,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+// body {
+//   content: "";
+//   display: block;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   background-image: url(../img/icons.svg#bg-fone); 
+// }
 
