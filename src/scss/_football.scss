@@ -10,9 +10,14 @@ text-align: center;
     width: 600px;
 height: 220px;
 border-radius: 37px;
+<<<<<<< Updated upstream
 border: 2px solid #000;
 background: #5ABB58;
 position: relative;
+=======
+
+
+>>>>>>> Stashed changes
 }
 
 .football-field{
@@ -21,6 +26,7 @@ position: relative;
 }
 
 .ball{
+<<<<<<< Updated upstream
 position: absolute;
 z-index: 2;
 }
@@ -39,4 +45,18 @@ width: 150px;
 top: 40px;
 right: -15px;
 transform: rotate(90deg); 
+=======
+    width: 50px;
+height: 50px;
+z-index: 2;
+>>>>>>> Stashed changes
+}
+.football-img{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 1310px;
+    right: 645px;
+    width: 230px;
+    height: 620px;
+    z-index: 1;
 }
