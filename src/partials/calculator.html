@@ -1,26 +1,68 @@
 <section class="calculator">
   <div class="container">
     <h2 class="calculator__title">Калькулятор</h2>
-    <div class="calculator__cont">
+    <form id="calculator-form" class="calculator__cont">
       <input
+        required
+        id="first-number"
         placeholder="Введіть число"
         type="number"
         class="calculator__number"
       />
       <div class="calculator__actions">
-        <button data-action="plus" class="calculator__action">+</button>
-        <button data-action="minus" class="calculator__action">*</button>
-        <button data-action="multiply" class="calculator__action">-</button>
-        <button data-action="divide" class="calculator__action">/</button>
+        <label class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="plus"
+            class="calculator__input"
+          />
+          +
+        </label>
+        <label class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="multiply"
+            class="calculator__input"
+          />
+          *
+        </label>
+        <label class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="minus"
+            class="calculator__input"
+          />
+          -
+        </label>
+        <label class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="divide"
+            class="calculator__input"
+          />
+          /
+        </label>
       </div>
       <input
+        required
+        id="second-number"
         placeholder="Введіть число"
         type="number"
         class="calculator__number"
       />
-      <button data-action="equal" class="calculator__action">=</button>
-      <input placeholder="Результат" type="number" class="calculator__result" />
-    </div>
+      <button type="submit" data-action="equal" class="calculator__action">
+        =
+      </button>
+      <p id="result-text" class="calculator__result">Результат</p>
+    </form>
     <hr class="calculator__line" />
   </div>
 </section>
