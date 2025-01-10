@@ -11,3 +11,4 @@ import('./js/team.js');
 import('./js/choose-scientist.js');
 import('./js/footer.js');
 import('./js/modal.js');
+import('./js/thanks.js');
