@@ -1,23 +1,23 @@
-const input = document.querySelector(".check-birthday-input");
-const button = document.querySelector(".check-birthday-button");
-const validText = document.getElementById("valid-text");
-const invalidText = document.getElementById("invalid-text");
-validText.style.opacity = 0;
-invalidText.style.opacity = 0;
 
-function isLeapYear(birthYear) {
-
-    return (birthYear % 4 === 0 && birthYear % 100 !== 0) || (birthYear % 400 === 0);
+const yearInput = document.getElementById("yearInput");
+const checkButton = document.getElementById("checkButton");
+const result = document.getElementById("result");
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-button.addEventListener('click', () => {
-    const birthYear = parseInt(input.value, 10);
-    if (!isNaN(birthYear) && birthYear > 0) {
-        const birthYear = parseInt(birthYear, 10);
-        if (isLeapYear(birthYear)) {
-            validText.style.opacity = 1;
+
+
+checkButton.addEventListener("click", () => {
+    const year = parseInt(yearInput.value, 10);
+
+    if (!isNaN(year) && year > 0) {
+        if (isLeapYear(year)) {
+            result.textContent = "Ви народилися у високосний рік!";
+            result.style.color = "green";
         } else {
-            invalidText.style.opacity = 1;
+            result.textContent = "Ви народилися у не високосний рік!";
+            result.style.color = "red";
         }
-    }
+    } 
 });
