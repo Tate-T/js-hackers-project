@@ -1,0 +1,32 @@
+.thanks {
+  width: 463px;
+  height: 245px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  border: 2px solid red;
+  padding: 30px 30px;
+  background-image: url(../img/thanks-bg@1x-desctop.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/thanks-bg@1x-desctop.webp);
+  }
+  background-repeat: no-repeat;
+  background-position: 42px 69px;
+
+  &__close-btn{
+    margin-left: 368px;
+  }
+
+  &__text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 33px;
+  }
+}
