@@ -1,5 +1,5 @@
 .dino-title{
-    color: #000;
+  color: #000;
 font-family: Montserrat Alternates;
 font-size: 16px;
 font-weight: 400;
@@ -7,48 +7,46 @@ text-align: center;
 }
 
 .game-platfor-dino{
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 .game-container {
-    position: relative;
-    width: 720px;
-    height: 241px;
-    background-color: #fff;
-    border: 1px solid #616161;
-  }
+  position: relative;
+  width: 720px;
+  height: 241px;
+  background-color: #fff;
+  border: 1px solid #616161;
+  
+}
 
 .dino {
 
-    width: 100px;
-    height: 400px;
+  width: 100px;
+  height: 400px;
 
-  }
-  
-  .dino-cactus{
+}
+
+.dino-cactus{
 position: absolute;
 top: 113px;
 right: 0px;
-
-  }
-  .cactus {
-
-    width: 90px;
-    height: 40px;
-
-  }
-.cloud{
-
-  width: 20px;
-  height: 40px;
-  background-color: rgb(125, 133, 125);
-}
-
-.dino-cloud{
 position: absolute;
 top: 0px;
 }
+.cactus {
+
+  width: 90px;
+  height: 40px;
+
+}
+.cloud{
+
+width: 20px;
+height: 40px;
+background-color: rgb(125, 133, 125);
+}
+
 .dino-dino{
 padding-top: 170px;
 }
