@@ -4,7 +4,7 @@ const cactus = document.querySelector(".cactus");
 const cloud = document.querySelector(".cloud");
 
 dinoGame.addEventListener("mousedown", event =>{
-    dino.style.top = "140px"
+    dino.style.top = "80px"
     
 } );
 dinoGame.addEventListener("mouseup", event =>{

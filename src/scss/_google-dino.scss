@@ -21,22 +21,20 @@ justify-content: center;
 }
 
 .dino {
-
+position: absolute;
   width: 100px;
-  height: 400px;
+
 
 }
 
 .dino-cactus{
 position: absolute;
-top: 113px;
+top: 132px;
 right: 0px;
-position: absolute;
-top: 0px;
 }
 .cactus {
 
-  width: 90px;
+  width: 75px;
   height: 40px;
 
 }
@@ -48,5 +46,10 @@ background-color: rgb(125, 133, 125);
 }
 
 .dino-dino{
-padding-top: 170px;
+position: absolute;
+top: -25px;
+}
+.dino-cloud{
+  position: absolute;
+  top: 0;
 }
