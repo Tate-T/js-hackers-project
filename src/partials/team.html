@@ -1,74 +1,79 @@
 <section class="team">
   <div class="container team__cont">
     <h2 class="team__title">Наша команда</h2>
-    <ul class="team__list">
-      <li class="team__item">
-        <picture>
-          <source
-            srcset="
-              ../img/moon@1x-desctop.webp 1x,
-              ../img/moon@1x-desctop.webp 2x
-            "
-          />
-          <img class="team__photo" src="../img/moon@1x-desctop.webp" />
-        </picture>
-        <h3 class="team__name">Марк Марков</h3>
-        <p class="team__info">Team Leader</p>
-      </li>
-      <li class="team__item">
-        <picture>
-          <source
-            srcset="
-              ../img/moon@1x-desctop.webp 1x,
-              ../img/moon@1x-desctop.webp 2x
-            "
-          />
-          <img class="team__photo" src="../img/moon@1x-desctop.webp" />
-        </picture>
-        <h3 class="team__name">Микола Кабин</h3>
-        <p class="team__info">Scrum Master</p>
-      </li>
-      <li class="team__item">
-        <picture>
-          <source
-            srcset="
-              ../img/moon@1x-desctop.webp 1x,
-              ../img/moon@1x-desctop.webp 2x
-            "
-          />
-          <img class="team__photo" src="../img/moon@1x-desctop.webp" />
-        </picture>
-        <h3 class="team__name">Марія Гаврилова</h3>
-        <p class="team__info">Developer</p>
-      </li>
-      <li class="team__item">
-        <picture>
-          <source
-            srcset="
-              ../img/moon@1x-desctop.webp 1x,
-              ../img/moon@1x-desctop.webp 2x
-            "
-          />
-          <img class="team__photo" src="../img/moon@1x-desctop.webp" />
-        </picture>
-
-        <h3 class="team__name">Даниїл Хливнюк</h3>
-        <p class="team__info">Developer</p>
-      </li>
-    </ul>
+    <div class="team__slider">
+      <button id="left-arrow" class="team__btn">
+        <svg class="team__arrow" width="50" height="100">
+          <use href="../img/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <div class="team__content">
+        <ul id="team-list" class="team__list">
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Марк Марков</h3>
+            <p class="team__info">Team Leader</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Микола Кабин</h3>
+            <p class="team__info">Scrum Master</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Марія Гаврилова</h3>
+            <p class="team__info">Developer</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Даниїл Хливнюк</h3>
+            <p class="team__info">Developer</p>
+          </li>
+        </ul>
+      </div>
+      <button id="right-arrow" class="team__btn">
+        <svg class="team__arrow" width="50" height="100">
+          <use href="../img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
     <ul class="team__lines">
       <li class="team__line team__checked"></li>
       <li class="team__line"></li>
       <li class="team__line"></li>
       <li class="team__line"></li>
     </ul>
-    <div class="team__arrows">
-      <svg class="team__arrow" width="50" height="100">
-        <use href="../img/icons.svg#arrow-left"></use>
-      </svg>
-      <svg class="team__arrow" width="50" height="100">
-        <use href="../img/icons.svg#arrow-right"></use>
-      </svg>
-    </div>
   </div>
 </section>
