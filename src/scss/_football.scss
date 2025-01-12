@@ -8,11 +8,11 @@
 
 .game-field {
     width: 600px;
-height: 220px;
-border-radius: 37px;
-border: 2px solid #000;
-background: #5ABB58;
-position: relative;
+    height: 220px;
+    border-radius: 37px;
+    border: 2px solid #000;
+    background: #5ABB58;
+    position: relative;
 
 }
 
@@ -20,6 +20,7 @@ position: relative;
 .football-field {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .ball {
@@ -37,20 +38,50 @@ position: relative;
 }
 
 .gates {
-position: absolute;
-top: 30px;
-right: -15px;
-width: 150px;
-z-index: 2;
-transform: rotate(90deg);
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    transform: rotate(90deg);
 }
-.football-img{
+
+.football-img {
 
     width: 100px;
     top: 59px;
     right: -15px;
     transform: rotate(90deg);
 
-   z-index: 3;
+    z-index: 3;
 }
 
+.football-result {
+    position: absolute;
+    top: -26px;
+    left: 40px;
+}
+
+.football-button {
+    position: absolute;
+    top: 10px;
+    right: 245px;
+    width: 140px;
+    height: 110px;
+    border-radius: 10px;
+    border: 0 ;
+opacity: 0;
+z-index: 4;
+}
+.football-button2 {
+    position: absolute;
+    top: 120px;
+    right: 245px;
+    width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    border: 0 ;
+opacity: 0;
+z-index: 4;
+}
