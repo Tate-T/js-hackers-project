@@ -13,6 +13,7 @@ border-radius: 37px;
 border: 2px solid #000;
 background: #5ABB58;
 position: relative;
+
 }
 
 
@@ -23,7 +24,7 @@ position: relative;
 
 .ball {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 
 .football-img {
@@ -36,16 +37,12 @@ position: relative;
 }
 
 .gates {
-    position: absolute;
-width: 150px;
-top: 40px;
+position: absolute;
+top: 30px;
 right: -15px;
-transform: rotate(90deg); 
-
-    width: 50px;
-height: 50px;
+width: 150px;
 z-index: 2;
-
+transform: rotate(90deg);
 }
 .football-img{
 
@@ -56,3 +53,4 @@ z-index: 2;
 
    z-index: 3;
 }
+

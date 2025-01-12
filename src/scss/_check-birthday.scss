@@ -43,6 +43,7 @@ gap: 10px;
     border-radius: 20px;
 background: #D7D7D7;
 border: none;
+margin-left: 200px;
 }
 
 .check-birthday{
@@ -53,4 +54,15 @@ border: none;
     width: 25px;
     height: 25px;
     fill: white;
+}
+
+.check-birthday-result{
+    display: flex;
+}
+.result{
+  
+text-align: right;
+font-family: Montserrat Alternates;
+font-size: 12px;
+font-weight: 400;
 }

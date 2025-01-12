@@ -13,5 +13,12 @@ gameField.addEventListener('mousemove', (event) => {
 
     ball.style.left = `${maxX}px`;
     ball.style.top = `${maxY}px`;
+    
+    if(ball.style.left === "470.4px"){
+alert("gol!");
+    }else{
 
+    }
 });
+
+
