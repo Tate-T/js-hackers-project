@@ -52,10 +52,23 @@
     border-radius: 0px 20px 20px 0px;
     border: none;
     background: #000;
-    stroke: #fff;
+    fill: #fff;
+  }
+
+  &__search {
+    fill: #fff;
   }
 
   &__message {
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 200px;
+  }
+
+  &__message-true {
     color: #039900;
     font-family: 'Montserrat Alternates';
     font-size: 12px;
@@ -64,4 +77,16 @@
     line-height: normal;
     padding-right: 200px;
   }
+
+  &__message-false {
+    color: #900;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 200px;
+  }
+
+
 }
