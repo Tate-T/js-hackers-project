@@ -26,6 +26,8 @@
 .ball {
     position: absolute;
     z-index: 3;
+   transition: 0.10s linear;
+    
 }
 
 .football-img {
@@ -65,13 +67,14 @@
 
 .football-button {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 245px;
-    width: 140px;
-    height: 110px;
+    width: 600px;
+    height:220px;
     border-radius: 10px;
     border: 0 ;
 opacity: 0;
+display: none;
 z-index: 4;
 }
 .football-button2 {

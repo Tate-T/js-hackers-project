@@ -17,8 +17,8 @@ gameField.addEventListener("mousemove", (event) => {
     ball.style.top = `${maxY}px`;
     
     
-    if(ball.style.left === "500.4px"){
-    ball.style.left = "10px"
+    if(ball.style.left === "470.4px"){
+      button.style.display="block"
     result.textContent  = "Молодець" ;
     }else{
 
