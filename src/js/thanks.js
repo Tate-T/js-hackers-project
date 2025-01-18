@@ -8,7 +8,8 @@
     refs.openModalThanks.addEventListener('click', toggleModal)
     refs.closeModalThanks.addEventListener('click', toggleModal)
 
-    function toggleModal() {
+    function toggleModal(event) {
         refs.modal.classList.toggle('is-hidden')
+        refs.closeModalThanks.preventDefault()
     }
 })()
