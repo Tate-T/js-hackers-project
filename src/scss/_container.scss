@@ -1,6 +1,14 @@
-.container{
-    max-width: 1090px;
-    margin: 0 15px;
-    margin: 0 auto;
-    outline: 2px solid red;
+.container {
+  width: 100%;
+  margin: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1090px) {
+    width: 1090px;
+  }
 }
