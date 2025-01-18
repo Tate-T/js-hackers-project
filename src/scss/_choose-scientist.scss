@@ -7,13 +7,21 @@
         margin: 0 auto 36px;
     }
 
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
+        margin-bottom: 36px;
+    }
+
     &__title {
         color: #000;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-weight: 400;
-        margin-bottom: 36px;
         text-align: center;
+        margin: 0;
     }
 
     &__cont {
@@ -39,6 +47,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    &__deleted &__name,
+    &__deleted &__years {
+        display: none;
     }
 
     &__name,
@@ -72,6 +85,11 @@
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
         padding: 10px 20px;
         border: none;
+    }
+
+    &__checked {
+        background-color: #D9D9D9;
+        color: #000;
     }
 
     &__variant:first-child,
