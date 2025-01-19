@@ -1,6 +1,6 @@
 const dino = document.querySelector(".dino");
 const cactus = document.querySelector(".cactus");
-const button = document.querySelector(".dino-button");
+const button = document.querySelector(".dino-button")
 const help = document.querySelector(".help");
 const lose = document.querySelector(".dino-lose")
 let isJumping = false;
@@ -44,11 +44,13 @@ function checkCollision() {
         cactus.style.animationPlayState = "paused";
         isGameOver === true;
         lose.style.display = "block"
+        dino.style.animationPlayState ="paused"
     } else {
 
 
     }
 }
+
 
 document.addEventListener("mousedown", (event) => {
     if (event.button === 0) jump();
@@ -68,3 +70,20 @@ if (button) {
     button.addEventListener("click", () => window.location.reload());
     button.insertAdjacentElement("afterend", button);
 }
+
+// button.addEventListener('click', function () {
+    // const elements = document.querySelectorAll('.game-container');
+  
+    // elements.forEach(element => {
+    //   element.style.top = '0px';
+    //   element.style.left = '0px';
+    // });
+// if(button === click(true)){
+//      dino.style.bottom = "0"
+//     dino.style.left = "50"
+//     cactus.style.right = "1000"
+//     cactus.style.animationPlayState ="starts"
+// }
+   
+    
+//   });

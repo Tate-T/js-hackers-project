@@ -2,98 +2,7 @@
   padding-bottom: 36px;
   position: relative;
 
-  &__title {
-      color: black;
-      font-family: "Montserrat Alternates";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-align: center;
-      margin-bottom: 46px;
-  }
 
-  &__list {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 36px;
-      gap: 38px;
-  }
-
-  &__button {
-      padding: 10px;
-      background-color: #000;
-      border-radius: 20px;
-  }
-
-  &__img {
-      width: 40px;
-      height: 40px;
-  }
-
-  &__result {
-      color: #039900;
-      font-size: 12px;
-      font-weight: 400;
-      text-align: center;
-      margin-bottom: 36px;
-  }
-
-  &__btn {
-      color: #FFF;
-      font-family: "Montserrat Alternates";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      border-radius: 20px;
-      background: #000;
-      padding: 10px 20px;
-      gap: 10px;
-      margin: 0 auto;
-      margin-bottom: 46px;
-      width: max-content;
-  }
-
-  &__line {
-      width: 536px;
-      height: 0px;
-      stroke-width: 1px;
-      stroke: #000;
-      margin: 0 auto;
-  }
-  &-title {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  &-ul{
-
-    gap: 38px;
-    padding: 36px 0;
-  }
-
-  &__elemt {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: black;
-    transition: box-shadow, color, background-color, outline, 
-
-  }
-
-
-
-  &-text {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
-  }
 
   &-ComputerC {
     color: #fff;
@@ -112,17 +21,7 @@
 
   }
 
-  &-div {
-    position: absolute;
-    top: 50px;
-    left: calc(50% + 230px);
-  }
 
-  &-result {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 170%;
-  }
 
 
 }
@@ -131,15 +30,23 @@
   position: relative;
 
   &__list {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    grid-gap: 20px; 
-    justify-items: center; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
     margin: 0 auto;
-    max-width: 600px; 
+    max-width: 600px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
   }
-
-
 
   &__button {
     color: #FFF;
@@ -155,22 +62,36 @@
     margin: 0 auto;
     margin-bottom: 46px;
     width: max-content;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__img {
     width: 40px;
     height: 40px;
+
+    @media (max-width: 480px) {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__title {
-      color: black;
-      font-family: "Montserrat Alternates";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-align: center;
-      margin-bottom: 46px;
+    color: black;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 46px;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -178,13 +99,37 @@
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+    }
   }
 
   &__div {
-    position: absolute;
-    top: 50px;
-    right: 320px;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      margin-top: 15px;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: 10px;
+    }
+
+    & p {
+      margin: 5px 0;
+      font-size: 14px;
+      font-family: "Montserrat Alternates";
+    }
+
+    & span {
+      font-weight: bold;
+      color: #000;
+    }
   }
+
   &-ComputerC {
     color: #fff;
     font-size: 12px;
@@ -195,10 +140,18 @@
     border-radius: 20px;
     background-color: black;
     display: block;
-    margin: 36px auto 0;
+    margin: 20px auto;
     cursor: pointer;
-    transition: box-shadow, color, background-color, border, 
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 
+    &:hover {
+      background-color: #444;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
 
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 }
