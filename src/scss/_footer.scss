@@ -4,20 +4,45 @@
     align-items: center;
     padding-top: 75px;
     padding-bottom: 75px;
+
+    @media screen and (max-width: 360px) {
+      display: block;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 
   &__logo {
     margin-right: 185px;
+
+    @media screen and (max-width: 360px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__icon {
     width: 165px;
     height: 70px;
     flex-shrink: 0;
+
+    @media screen and (max-width: 360px) {
+      width: 150px;
+      height: 60px;
+      margin-left: 165px;
+    }
   }
 
   &__list {
-    margin-right: 187px;
+    margin-right: 167px;
+
+    @media screen and (max-width: 360px) {
+      
+      margin-left: 100px;
+      margin-right: 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
@@ -27,6 +52,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 170%;
+
+    @media screen and (max-width: 360px) {
+      font-size: 9px;
+      font-weight: 300;
+    }
   }
 
   &__registration-email {
@@ -44,8 +74,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 36px;
+    margin-right: 26px;
     margin-bottom: 18px;
+
+    @media screen and (max-width: 360px) {
+      margin-left: 90px;
+      font-size: 9px;
+      font-weight: 200;
+    }
   }
 
   &__btn {
@@ -62,6 +98,14 @@
     font-weight: 400;
     line-height: normal;
     border: none;
+
+    @media screen and (max-width: 360px) {
+      display: block;
+      font-size: 10px;
+      font-weight: 200;
+      margin-left: 120px;
+      margin-bottom: 10px;
+    }
   }
 
   &__information {
@@ -71,5 +115,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (max-width: 360px) {
+      margin-left: 40px;
+    }
   }
 }

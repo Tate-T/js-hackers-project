@@ -5,15 +5,35 @@
     &-title {
         text-align: center;
         color: #000;
-        font-size: 16px;    
+        font-size: 16px;
         font-weight: 400;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+        }
     }
 
     &-form {
-        gap: 38px;
+        gap: 16px;
         display: flex;
+        flex-direction: column; /* Мобильные устройства */
         justify-content: center;
-        padding: 36px 0;
+        align-items: center; /* Добавляем выравнивание по центру */
+        padding: 24px 0;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row; /* Планшеты и выше */
+            gap: 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 38px;
+            padding: 36px 0;
+        }
     }
 
     &-input {
@@ -23,11 +43,20 @@
         border-radius: 20px;
         background: #D7D7D7;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        width: 140px;
+        width: 100%; /* Мобильные устройства */
+        max-width: 140px; /* Ограничиваем ширину */
         display: inline-flex;
         padding: 10px 20px;
         border: none;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            max-width: 180px; /* Планшеты */
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 200px; /* Десктоп */
+        }
     }
 
     &-paragraph {
@@ -36,7 +65,14 @@
         font-weight: 400;
         line-height: normal;
         text-align: center;
+        margin-top: 20px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
     }
-
-
 }
