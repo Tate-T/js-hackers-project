@@ -5,66 +5,574 @@
     <link rel="icon" type="image/svg+xml" href="/project-name/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/project-name/assets/index-99a6ec52.js"></script>
-    <link rel="stylesheet" href="/project-name/assets/index-66886d44.css">
+    <script type="module" crossorigin src="/project-name/assets/index-41f63140.js"></script>
+    <link rel="stylesheet" href="/project-name/assets/index-b3b91725.css">
   </head>
+
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-name/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+  <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    <div class="header__cont">
+      <div class="header__left">
+        <a class="header__logo" href="#">
+          <svg class="header__icon" width="93" height="38">
+            <use href="../img/icons.svg#header-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <button id="header-btn" type="button" class="header__btn">
+                Інтерактив
+                <svg class="header__arrow" width="11" height="6">
+                  <use href="../img/icons.svg#arrow-down"></use>
+                </svg>
+              </button>
+              <div class="header__overlay is-hidden">
+                <ul class="header__variants">
+                  <li class="header__variant">
+                    <button id="first-variant" class="header__choice">
+                      Без фільтрів
+                    </button>
+                  </li>
+                  <li class="header__variant">
+                    <button id="second-variant" class="header__choice">
+                      Числовий
+                    </button>
+                  </li>
+                  <li class="header__variant">
+                    <button id="third-variant" class="header__choice">
+                      Ігровий
+                    </button>
+                  </li>
+                  <li class="header__variant">
+                    <button id="forth-variant" class="header__choice">
+                      Ознайомчий
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Наша команда</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Контакти </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__right">
+        <button class="header__switch standby">
+          <div class="header__checked">
+            <picture>
+              <source
+                srcset="
+                  ../img/sun@1x-desctop.webp 1x,
+                  ../img/sun@1x-desctop.webp 2x
+                "
+              />
+              <img class="header__sun" src="../img/sun@1x-desctop.webp" />
+            </picture>
+          </div>
+        </button>
+        <p class="header__text">
+          Вітаємо, <span class="headername" id="user-name">User</span>!
+        </p>
+        <button class="header__menu">
+          <svg class="header__burger" width="19.5" height="12">
+            <use href="../img/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-name/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
+  <div id="one2" class="container">
+  <div class="main-title">
+    <h1 class="main-main-title">Популярні інетрактивні ігри</h1>
+  </div>
+
+  <div class="check-birthday">
+    <h2 class="check-birthday-title">Перевір в який рік ти народився</h2>
+    <div class="input-box">
+      <form>
+        <input
+          type="text"
+          placeholder="Введіть рік народження"
+          class="check-birthday-input number"
+          id="yearInput"
+        />
+        <button class="check-birthday-button" id="checkButton" type="button">
+          <img
+            src="../img/icons.svg#search"
+            alt="search"
+            width="15"
+            height="15"
+            class="check-birthday-img"
+          />
+        </button>
+        <div class="check-birthday-result">
+          <p id="result" class="result"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <div id="two2" class="container guess-number">
+  <h3 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h3>
+  <div class="guess-number__wrap">
+    <form class="guess-number__number">
+      <input
+        type="number"
+        placeholder="Введіть число"
+        class="guess-number__number-input"
       />
+      <span class="guess-number__change">
+        <button type="submit" class="guess-number__btn-guess">
+          <svg class="guess-number__search" width="15" height="15">
+            <use href="../../img/icons.svg#search"></use>
+          </svg>
+        </button>
+      </span>
+    </form>
+    <p class="guess-number__message">Ви програли, комп’ютер загадав (number)</p>
+  </div>
+  <div class="guess-number__line"></div>
+</div>
+
+  <section id="three2" class="rps">
+  <div class="container">
+    <h2 class="rps-title">Камінь - ножиці - папір</h2>
+    <ul class="rps__list">
+      <li class="rps__item">
+        <button class="rps__button">
+          <picture>
+            <source
+              srcset="./img/stone@1x-desctop.webp 1x, ./img/stone@2x-desctop 2x"
+            />
+            <img
+              class="rps__img"
+              width="40"
+              height="40"
+              src="./img/stone@1x-desctop.webp 1x"
+              alt="Камінь"
+            />
+          </picture>
+        </button>
+      </li>
+      <li class="rps__item">
+        <button class="rps__button">
+          <picture>
+            <source
+              srcset="data:image/webp;base64,UklGRi4DAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMwCAAABoL9tmyG5HtEzueyKnVRs272xbdu2bdu2bXVsH7P32Kc2dtcPjXRHxATgM8GxffiPfPNEEOg4S1Xz19l6OCOY79tMvu7P6l3nr1hBZNIpxbMoPx2iY6fQMohiMTDZ9PNlf9BFgsj1JjZp3xlebaPTE1vnCSL5ewnzznt9vhCKvk8UBJ8PhOzPy7hFvZIw4iqBTrwEbDvodmE98F2nYESMAUV0PkcRW0LT3xIFw0oTOLnVsWsT8NUUAk77tgJUsjNAdi2h4QsZFOuPAOY82LwZOLOWwAvq9GDECKlzQDlbBkdVAHPa5h1A8vaEWTMVGMouAlkLEerhBcDNC8D29eEYKiU0VYJsWoaDORkij0ayeSshG0pAC5Vf5wuLK5MQyb79/hSht1DiUMsR2ggnVmyYoSdHiP3nzBCMHX9p/fH1nwv+jhQ8pO3b37z425wrP01eU0sa58hcsXS82L99rvcXlI2bGka/A3qT/ITKap3Ac/irKnhL0yrgq+CzCVB28datwyUkVQ0B0XXu4i5ZYWZ0Dh/CmgwL9fGJ8y68LAbWDZD/frNp840XI2HpkyReC76HqVZpgLsj6Wypuow5AdBajUD8MsIj4f/NaPM8J4DUOfmx6+QrGEoAVLIr0/b/eG5NLSLWMJybd9P2pyRCGZhTHCy8QqL/q7mt3EBnK45D2sX4fgIsMIlSwiGUwb45buYEluzFufYITf7OCileVObaZAdbFjDhkNvFkSzY7pAvanNpOcCa09RWwnFoHiNMt/VrKP+2GIiLhyn3Lqsjjy4WuboGkHY1Nq93M1R6Jtv7lv33WSqObcL19F6k9dm4xWomWaObu3H8XFIKzFrRMzZ9/pRuuWyDLOPNPQ3gyDk8M/z4hcTZ8kUfPIf8lwNn8j2W9EKs0od6teh28XlffE7Wm2rkqj1LmRnxnW/JLevOnJT4Lrzr9/e/HKiBO1ZQOCA8AAAAMAQAnQEqKAAoAD6RPJhIJaMioS4oALASCWkAAISJKDfdeQrLr0FZy5eAAPs//8aId/09wWf+RwAAAAAA 1x, data:image/webp;base64,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 2x"
+            />
+            <img
+              class="rps__img"
+              width="40"
+              height="40"
+              src="./img/scissors@1x-desctop.webp  1x"
+              alt="Камінь"
+            />
+          </picture>
+        </button>
+      </li>
+      <li class="rps__item">
+        <button class="rps__button">
+          <picture>
+            <source
+              srcset="
+                ./img/paper@1x-desctop.webp 1x,
+                ./img/paper@x-desctop.webp  2x
+              "
+            />
+            <img
+              class="rps__img"
+              width="40"
+              height="40"
+              src="./img/paper@1x-desctop.webp  1x"
+              alt="Камінь"
+            />
+          </picture>
+        </button>
+      </li>
+    </ul>
+    <p class="rps-text">Почніть гру</p>
+    <button class="rps-ComputerC" type="button">
+      Дізнатись вибір комп’ютера
+    </button>
+    <div class="rps-div">
+      <p class="rps-result">Рахунок:</p>
+      <p class="rps-result">Комп’ютер - <span class="rps-pc">0</span></p>
+      <p class="rps-result">Ви - <span class="rps-user">0</span></p>
+      <p class="rps-result">Нічия - <span class="rps-draw">0</span></p>
     </div>
   </div>
 </section>
 
+  <section id="four2" class="calculator">
+  <div class="container">
+    <h2 class="calculator__title">Калькулятор</h2>
+    <form id="calculator-form" class="calculator__cont">
+      <input
+        required
+        id="first-number"
+        placeholder="Введіть число"
+        type="number"
+        class="calculator__number"
+      />
+      <div class="calculator__actions">
+        <label id="plus" class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="plus"
+            class="calculator__input"
+          />
+          +
+        </label>
+        <label id="minus" class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="multiply"
+            class="calculator__input"
+          />
+          *
+        </label>
+        <label id="multiply" class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="minus"
+            class="calculator__input"
+          />
+          -
+        </label>
+        <label id="divide" class="calculator__label">
+          <input
+            required
+            type="radio"
+            name="action"
+            value="divide"
+            class="calculator__input"
+          />
+          /
+        </label>
+      </div>
+      <input
+        required
+        id="second-number"
+        placeholder="Введіть число"
+        type="number"
+        class="calculator__number"
+      />
+      <button type="submit" data-action="equal" class="calculator__action">
+        =
+      </button>
+      <p id="result-text" class="calculator__result">Результат</p>
+    </form>
+    <div class="calculator__line"></div>
+  </div>
+</section>
 
+  <section id="five2" class="time-calculator-calculator">
+  <h2 class="time-calculator-title">Калькулятор часу</h2>
+  <div class="time-calculator-div">
+    <form class="time-calculator-form">
+      <input type="text" class="time-calculator-input" placeholder="Ведіть число" />
+      <button type="submit" class="time-calculator-button">
+
+        <svg width="15" height="15" class="time-calculator-icons">
+          <use href="../img/icons.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <div class="time-calculator-dot"></div>
+    <p class="time-calculator-time">0 дн. 00:00:00</p>
+  </div>
+
+</div>
+<div class="time-calculator-line"></div>
+</div>
+</section>
+
+  <section id="six2" class="Google-dino">
+  <div class="container">
+    <h2 class="dino-title">Google динозавр</h2>
+    <div class="game-platfor-dino">
+      <div class="game-container">
+        <div class="dino-box">
+          <img src="../img/dino-dino.png" alt="Dino" class="dino" />
+        </div>
+        <img src="../img/cactus-dino.png" alt="Cactus" class="cactus" />
+        <div class="dino-lose">
+          <h2 class="lose-text">Ти програв!</h2>
+          <button class="dino-button">Restart</button>
+        </div>
+      </div>
+      <p class="help">Натискай ЛКМ щоб динозавр пригнув</p>
+    </div>
+  </div>
+</section>
+
+  <div id="seven2" class="container">
+  <h2 class="football-title">Футбол</h2>
+  <div class="football-field">
+    <div class="game-field" id="game-field">
+      <div class="ball" id="ball">
+        <img src="../img/football@1x-desctop.webp" alt="ball" />
+      </div>
+      <div class="gates" id="gates">
+        <img src="../img/football-gates.png" alt="" />
+      </div>
+      <p class="football-result" id="football-result">Забий гол</p>
+    </div>
+    <button class="football-button" id="football-button" type="button">
+      Restart
+    </button>
+    <button class="football-button2" id="football-button2" type="button">
+      Restart
+    </button>
+  </div>
+</div>
+
+  <section id="eight2" class="biggestNum">
+  <div class="container">
+    <h2 class="biggestNum-title">Введіть 3 числа</h2>
+    <form class="biggestNum-form">
+      <input type="text" placeholder="Введіть число" class="biggestNum-input" />
+      <input type="text" placeholder="Введіть число" class="biggestNum-input" />
+      <input type="text" placeholder="Введіть число" class="biggestNum-input" />
+    </form>
+    <p class="biggestNum-paragraph">Найбільше число, яке ви ввели</p>
+  </div>
+</section>
+
+  <section id="nine2" class="team">
+  <div class="container team__cont">
+    <h2 class="team__title">Наша команда</h2>
+    <div class="team__slider">
+      <button id="left-arrow" class="team__btn">
+        <svg class="team__arrow" width="50" height="100">
+          <use href="../img/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <div class="team__content">
+        <ul id="team-list" class="team__list">
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Марк Марков</h3>
+            <p class="team__info">Team Leader</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Микола Кабин</h3>
+            <p class="team__info">Scrum Master</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Марія Гаврилова</h3>
+            <p class="team__info">Developer</p>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source
+                srcset="
+                  ../img/moon@1x-desctop.webp 1x,
+                  ../img/moon@1x-desctop.webp 2x
+                "
+              />
+              <img class="team__photo" src="../img/moon@1x-desctop.webp" />
+            </picture>
+            <h3 class="team__name">Даниїл Хливнюк</h3>
+            <p class="team__info">Developer</p>
+          </li>
+        </ul>
+      </div>
+      <button id="right-arrow" class="team__btn">
+        <svg class="team__arrow" width="50" height="100">
+          <use href="../img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="team__lines">
+      <li class="team__line team__checked"></li>
+      <li class="team__line"></li>
+      <li class="team__line"></li>
+      <li class="team__line"></li>
+    </ul>
+  </div>
+</section>
+
+  <section id="ten2" class="scientist">
+  <div class="container">
+    <div class="scientist__line"></div>
+    <div class="scientist__wrapper">
+      <h2 class="scientist__title">Обери вченого/их</h2>
+      <button id="cast-button" class="scientist__info">Скинути фільтри</button>
+    </div>
+    <div class="scientist__cont">
+      <ul class="scientist__variants">
+        <li class="scientist__variant">
+          <button id="first-button" class="scientist__info">
+            Які вчені народилися в 19 ст.
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="second-button" class="scientist__info">
+            Знайти рік народження Albert Einshtein
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="third-button" class="scientist__info">
+            Відсортувати вчених за алфавітом
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="forth-button" class="scientist__info">
+            Знайти вчених, прізвища яких починаються на на літеру “С”
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="fifth-button" class="scientist__info">
+            Відсортувати вчених за кількістю прожитих років
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="sixth-button" class="scientist__info">
+            Видалити всіх вчених, ім’я яких починається на “А”
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="seventh-button" class="scientist__info">
+            Знайти вченого, який народився найпізніше
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="eighth-button" class="scientist__info">
+            Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+          </button>
+        </li>
+        <li class="scientist__variant">
+          <button id="ninth-button" class="scientist__info">
+            Знайти вчених, в яких співпадають перші літери імені і прізвища
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="footer__container container">
+    <a class="footer__logo" href="#">
+      <svg class="footer__icon" width="93" height="38">
+        <use href="../img/icons.svg#footer-logo"></use>
+      </svg>
+    </a>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="" class="footer__link">Тел: +38 (123) 456 78 90</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">E-Mail: codingmagic@gmail.com</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">Facebook: CodingMagic</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">Twitter: CodingMagic</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">Instagram: CodingMagic</a>
+      </li>
+    </ul>
+    <form action="" class="footer__registration">
+      <input type="email" placeholder="Ваша ел. адреса..." class="footer__registration-email" required/>
+      <button type="button" class="footer__btn" data-thanks-open>Підписатись</button>
+      <p class="footer__information">*Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті</p>
+    </form>
+  </div>
+</footer>
+
+  <div class="backdrop-modal" data-modal>
+  <div class="modal" id="modal">
+    <form action="" class="modal__form">
+      <button class="modal__close-btn" id="closeModal" data-modal-close>
+        <svg class="modal__icon-close" width="15" height="15"></svg>
+      </button>
+      <p class="modal__text">
+        Привіт! 
+        Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
+        вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно
+        провести час!
+      </p>
+      <p class="modal__task">Введіть своє ім’я:</p>
+      <input type="text" placeholder="Ваше ім’я..." class="modal__input" />
+      <button type="button" class="modal__btn" id="closeModal" data-modal-close-btn>Зберегти</button>
+    </form>
+  </div>
+  </div>
+</div>
+
+
+  <div class="backdrop is-hidden" data-thanks>
+    <div class="thanks">
+      <form action="" class="thanks__form">
+        <button class="thanks__close-btn" data-thanks-close>
+          <svg class="thanks__icon-close" width="15" height="15"></svg>
+        </button>
+        <h2 class="thanks__text">Дякую за підписку!</h2>
+      </form>
+    </div>
+  </div>
     
+
   </body>
 </html>
