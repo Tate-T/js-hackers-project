@@ -53,8 +53,8 @@ z-index: 2;
 }
 .help{
   position: absolute;
-  top: 15px;
-  left: 420px;
+  top: -25px;
+  left: 10px;
 }
 .dino-button{
   position: absolute;
@@ -73,9 +73,7 @@ background-color: rgb(0, 106, 255);
   width: 200px;
   height: 100px;
   background-color: rgb(16, 255, 203);
-  position: absolute;
-  top: 35px;
-  left: 250px;
+
   padding-top: 24px;
   border-radius: 5px;
   position: relative;
@@ -85,4 +83,8 @@ background-color: rgb(0, 106, 255);
 
   text-align: center;
 }
-
+.lose-box{
+  display: flex;
+  justify-content: center;
+margin-top: 50px;
+}
