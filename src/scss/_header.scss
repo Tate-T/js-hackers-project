@@ -1,23 +1,50 @@
 .header {
-    padding: 21px 0;
+    padding: 12px 0;
     background: #FFF;
+
+    @media screen and (min-width: 768px) {
+        padding: 16px 0;
+    }
+
+    @media screen and (min-width: 1090px) {
+        padding: 21px 0;
+    }
 
     &__cont {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__left {
-        display: flex;
-        align-items: center;
-        gap: 81px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            gap: 64px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            gap: 81px;
+        }
     }
 
     &__list {
-        display: flex;
-        align-items: center;
-        gap: 50px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            gap: 50px;
+        }
     }
 
     &__item:first-child {
@@ -25,16 +52,21 @@
     }
 
     &__btn {
-        color: #000;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        position: relative;
-        padding: 0;
-        border: none;
-        background-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 10px;
+            font-weight: 400;
+            position: relative;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+
+        @media screen and (min-width: 1090px) {
+            font-size: 12px;
+        }
 
     }
 
@@ -51,29 +83,44 @@
         border-radius: 0px 0px 20px 20px;
         background: #FFF;
         position: absolute;
+        z-index: 100;
         top: 36px;
         left: 50%;
         transform: translate(-50%, 0);
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__variant {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__choice {
-        color: #000;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        width: 160px;
-        height: 35px;
+        @media screen and (min-width: 768px) {
+            color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 10px;
+            font-weight: 400;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            width: 132px;
+            height: 30px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            font-size: 12px;
+            width: 160px;
+            height: 35px;
+        }
 
     }
 
@@ -85,56 +132,119 @@
 
     &__variant:last-child &__choice {
         border-radius: 0px 0px 20px 20px;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__choice:hover,
     &__choice:focus {
         background-color: #F1F1F1;
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__link {
-        color: #000;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+
+        @media screen and (min-width: 768px) {
+            color: #000;
+            font-family: "Montserrat Alternates";
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        @media screen and (min-width: 1090px) {
+            font-size: 12px;
+        }
     }
 
     &__right {
         display: flex;
         align-items: center;
-        gap: 51px;
+        gap: 24px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            gap: 51px;
+        }
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__switch {
-        border-radius: 11px;
-        background: #7A7A7A;
-        display: flex;
-        border: none;
-        gap: 6px;
-        padding: 0;
-        width: 40px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            border-radius: 11px;
+            background: #7A7A7A;
+            display: flex;
+            border: none;
+            gap: 6px;
+            padding: 0;
+            width: 32px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            width: 40px;
+        }
     }
 
     &__checked {
-        width: 22px;
-        height: 22px;
-        background-color: #fff;
-        border: 0.5px solid #000;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border: 0.5px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            width: 22px;
+            height: 22px;
+        }
     }
 
     &__text {
         color: #000;
         text-align: right;
         font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
+        font-size: 9px;
         font-weight: 400;
-        line-height: normal;
+        margin: 0;
+
+        @media screen and (min-width: 768px) {
+            font-size: 10px;
+        }
+
+        @media screen and (min-width: 1090px) {
+            font-size: 12px;
+        }
+    }
+
+    &__menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        stroke-width: 1.4px;
+        stroke: #000;
     }
 }
