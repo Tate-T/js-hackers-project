@@ -61,8 +61,9 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 326px;
-    left: 587px;
+    // top: 326px;
+    top: 348px;
+    left: 604px;
 
     @media screen and (max-width: 360px) {
       width: 40px;
@@ -97,7 +98,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-right: 200px;
 
     @media screen and (max-width: 360px) {
       font-size: 8px;
@@ -144,7 +144,7 @@
     position: absolute;
     width: 536px;
     height: 2px;
-    top: 400px;
+    top: 420px;
     left: calc(50% - 268px);
     background-color: black;
 
