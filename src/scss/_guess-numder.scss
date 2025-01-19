@@ -1,6 +1,7 @@
 .guess-number {
   padding-top: 36px;
   padding-bottom: 36px;
+  margin-bottom: 36px;
 
   &__title {
     display: flex;
@@ -13,6 +14,12 @@
     line-height: normal;
     height: 35px;
     margin-bottom: 36px;
+
+    @media screen and (max-width: 360px) {
+      font-size: 8px;
+      font-weight: 200;
+      margin-bottom: 16px;
+    }
   }
 
   &__wrap {
@@ -23,6 +30,11 @@
   &__number {
     padding-left: 200px;
     margin-right: 202px;
+
+    @media screen and (max-width: 360px) {
+      padding-left: 50px;
+      margin-right: 50px;
+    }
   }
 
   &__number-input {
@@ -35,14 +47,29 @@
     gap: 10px;
     border: none;
     box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 360px) {
+      width: 100px;
+      padding: 5px 5px 5px 5px;
+      font-size: 8px;
+      font-weight: 200;
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
   }
 
   &__change {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 386px;
+    top: 326px;
     left: 587px;
+
+    @media screen and (max-width: 360px) {
+      width: 40px;
+      height: 40px;
+      top: 403px;
+      left: 131px;
+    }
   }
 
   &__btn-guess {
@@ -53,6 +80,11 @@
     border: none;
     background: #000;
     fill: #fff;
+
+    @media screen and (max-width: 360px) {
+      padding: 2px;
+    border-radius: 0px 20px 20px 0px;
+      }
   }
 
   &__search {
@@ -66,6 +98,12 @@
     font-weight: 400;
     line-height: normal;
     padding-right: 200px;
+
+    @media screen and (max-width: 360px) {
+      font-size: 8px;
+      font-weight: 200;
+      padding-right: 20px;
+      }
   }
 
   &__message-true {
@@ -76,6 +114,12 @@
     font-weight: 400;
     line-height: normal;
     padding-right: 200px;
+
+    @media screen and (max-width: 360px) {
+      font-size: 8px;
+      font-weight: 200;
+      padding-right: 20px;
+      }
   }
 
   &__message-false {
@@ -86,7 +130,29 @@
     font-weight: 400;
     line-height: normal;
     padding-right: 200px;
+
+    @media screen and (max-width: 360px) {
+      font-size: 8px;
+      font-weight: 200;
+      padding-right: 20px;
+      }
   }
 
+  &__line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 536px;
+    height: 2px;
+    top: 400px;
+    left: calc(50% - 268px);
+    background-color: black;
 
+    @media screen and (max-width: 360px) {
+      width: 250px;
+    height: 2px;
+    top: 458px;
+    left: calc(50% - 125px);
+      }
+  }
 }
