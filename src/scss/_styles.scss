@@ -22,6 +22,7 @@
 @import url('./_vars.scss');
 @import url('./_modal.scss');
 @import url('./_thanks.scss');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -48,6 +49,10 @@ body {
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-      background-image: url(../../img/left-bg-fone@2x-desctop.png), url(../../img/right-bg-fone@2x-desctop.png);
+    background-image: url(../../img/left-bg-fone@2x-desctop.png), url(../../img/right-bg-fone@2x-desctop.png);
   }
+}
+
+.section__deleted {
+  display: none;
 }
