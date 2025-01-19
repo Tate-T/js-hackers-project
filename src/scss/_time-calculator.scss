@@ -1,58 +1,86 @@
-.time-calculator{
-  padding-bottom: 36px;
-  &-title {
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    line-height: normal;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-  &-form {
+.time-calculator {
+    padding-bottom: 36px;
+  
+    &-title {
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      text-align: center;
+      font-weight: 400;
+  
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+      }
+    }
+  
+    &-form {
       position: relative;
-  }
-
-  &-div{
+      display: flex;
+      flex-direction: row;
+  
+      @media screen and (max-width: 767px) {
+        flex-direction: column; /* На мобильных кнопка и input в колонку */
+        align-items: center;
+      }
+    }
+  
+    &-div {
       display: flex;
       margin: 36px auto;
-      width: 466px;
-  }
-
-
-  &-dot {
+      width: 100%;
+      max-width: 466px;
+      flex-direction: column; /* Элементы вертикально на мобильных */
+  
+      @media screen and (min-width: 768px) {
+        flex-direction: row; /* Горизонтально на планшетах */
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    &-dot {
       border: 1px dashed;
       height: 0px;
       width: 100px;
-      margin-top: 18px;
-      margin-left: 33px;
-  }
-
-  &-input {
+      margin: 18px auto;
+  
+      @media screen and (min-width: 768px) {
+        margin: 18px 33px 0 33px;
+      }
+    }
+  
+    &-input {
       border-radius: 20px;
       background: #d7d7d7;
       display: inline-flex;
-      padding: 10px 43px 10px 10px;
-      align-items: flex-start;
-      gap: 10px;
-      position: relative;
+      padding: 10px 20px;
+      align-items: center;
       border: none;
-      width: 150px;
+      width: 100%; /* Занимает всю ширину на мобильных */
+      max-width: 150px; /* Ограничиваем на планшетах */
       color: #000;
       font-size: 12px;
       font-weight: 400;
       box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-
+      margin-bottom: 10px; /* Разделение на мобильных */
+  
       &::placeholder {
-          color: #7e7e7e;
-          font-size: 12px;
-          font-weight: 400;
+        color: #7e7e7e;
+        font-size: 12px;
+        font-weight: 400;
       }
-
-  }
-
-  &-button {
+  
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0; /* Убираем разделение на планшетах */
+      }
+    }
+  
+    &-button {
       background-color: #000;
       border-radius: 0px 20px 20px 0px;
       height: 100%;
@@ -60,26 +88,39 @@
       position: absolute;
       top: 0px;
       right: 0;
-  }
-
-  &-icons {
+  
+      @media screen and (max-width: 767px) {
+        position: relative; /* На мобильных кнопка ниже input */
+        border-radius: 20px;
+        margin-top: 10px;
+        width: 100%; /* Растягиваем на ширину контейнера */
+      }
+    }
+  
+    &-icons {
       fill: #FFF;
       text-align: center;
-
-  }
-
-  &-time {
+    }
+  
+    &-time {
       color: #000;
       font-size: 12px;
       line-height: normal;
       margin-top: 10px;
-      margin-left: 33px;
+      text-align: center;
+  
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-left: 33px;
+        text-align: left;
+      }
+    }
+  
+    &-line {
+      width: 100%; /* Линия на всю ширину экрана */
+      max-width: 536px;
+      margin: 36px auto 0;
+      border: 1px solid #000;
+    }
   }
-
-  &-line {
-    width: 536px;
-    margin: 36px auto 0;
-    border: 1px solid #000;
-}
-
-}
+  
