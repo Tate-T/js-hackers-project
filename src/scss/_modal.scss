@@ -21,7 +21,7 @@
   width: 576px;
   height: 316px;
   position: relative;
-  z-index: 100;
+  z-index: 3;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
@@ -46,10 +46,16 @@
 
   &__close-btn {
     margin-left: 531px;
+    background: #fff;
+    border: none;
 
     @media screen and (max-width: 360px) {
       margin-left: 241px;
     }
+  }
+
+  &_icon-close {
+    fill: #000;
   }
 
   &__text {
