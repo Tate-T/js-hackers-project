@@ -1,7 +1,15 @@
 .team {
+
     &__cont {
-        padding: 0 36px;
+        padding: 36px 32px;
         position: relative;
+        background-color: #fff;
+
+        @media screen and (min-width: 768px) {
+            padding: 36px 92px;
+        }
+
+        @media screen and (min-width: 1090px) {}
     }
 
     &__title {
@@ -21,8 +29,12 @@
 
     &__content {
 
-        width: 150px;
+        width: 120px;
         overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+            width: 150px;
+        }
     }
 
     &__list {
@@ -35,14 +47,25 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        height: 188px;
+
+        @media screen and (min-width: 768px) {
+            height: 238px;
+            gap: 20px;
+        }
     }
 
     &__photo {
-        min-width: 150px;
-        height: 150px;
+        min-width: 120px;
+        height: 120px;
         border-radius: 20px;
         background: #D9D9D9;
+
+        @media screen and (min-width: 768px) {
+            min-width: 150px;
+            height: 150px;
+        }
     }
 
     &__name {
@@ -50,6 +73,7 @@
         font-family: "Montserrat Alternates";
         font-size: 14px;
         font-weight: 400;
+        margin: 0;
     }
 
     &__info {
@@ -57,6 +81,7 @@
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-weight: 400;
+        margin: 0;
     }
 
     &__lines {
@@ -92,5 +117,16 @@
         fill: none;
         stroke-width: 1px;
         stroke: #000;
+        width: 30px;
+        height: 60px;
+
+        @media screen and (min-width: 768px) {
+            width: 50px;
+            height: 100px;
+        }
+
+        @media screen and (min-width: 1090px) {}
+
+
     }
 }
