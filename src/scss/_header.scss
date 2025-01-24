@@ -14,10 +14,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        @media screen and (min-width: 768px) {}
-
-        @media screen and (min-width: 1090px) {}
     }
 
     &__left {
@@ -87,20 +83,12 @@
         top: 36px;
         left: 50%;
         transform: translate(-50%, 0);
-
-        @media screen and (min-width: 768px) {}
-
-        @media screen and (min-width: 1090px) {}
     }
 
     &__variant {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        @media screen and (min-width: 768px) {}
-
-        @media screen and (min-width: 1090px) {}
     }
 
     &__choice {
@@ -132,19 +120,11 @@
 
     &__variant:last-child &__choice {
         border-radius: 0px 0px 20px 20px;
-
-        @media screen and (min-width: 768px) {}
-
-        @media screen and (min-width: 1090px) {}
     }
 
     &__choice:hover,
     &__choice:focus {
         background-color: #F1F1F1;
-
-        @media screen and (min-width: 768px) {}
-
-        @media screen and (min-width: 1090px) {}
     }
 
     &__link {
