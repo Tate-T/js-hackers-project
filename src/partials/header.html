@@ -10,22 +10,33 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <button type="button" class="header__btn">
+              <button id="header-btn" type="button" class="header__btn">
                 Інтерактив
                 <svg class="header__arrow" width="11" height="6">
                   <use href="../img/icons.svg#arrow-down"></use>
                 </svg>
               </button>
-              <div class="article__overlay is-hidden">
+              <div class="header__overlay is-hidden">
                 <ul class="header__variants">
                   <li class="header__variant">
-                    <button class="header__choice">Числовий</button>
+                    <button id="first-variant" class="header__choice">
+                      Без фільтрів
+                    </button>
                   </li>
                   <li class="header__variant">
-                    <button class="header__choice">Ігровий</button>
+                    <button id="second-variant" class="header__choice">
+                      Числовий
+                    </button>
                   </li>
                   <li class="header__variant">
-                    <button class="header__choice">Ознайомчий</button>
+                    <button id="third-variant" class="header__choice">
+                      Ігровий
+                    </button>
+                  </li>
+                  <li class="header__variant">
+                    <button id="forth-variant" class="header__choice">
+                      Ознайомчий
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -53,7 +64,14 @@
             </picture>
           </div>
         </button>
-        <p class="header__text">Вітаємо, User!</p>
+        <p class="header__text">
+          Вітаємо, <span class="header__name" id="user-name">User</span>!
+        </p>
+        <button class="header__menu">
+          <svg class="header__burger" width="19.5" height="12">
+            <use href="../img/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>

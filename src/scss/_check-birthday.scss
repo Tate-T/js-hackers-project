@@ -96,52 +96,53 @@ padding-bottom: 30px;
 .check-birthday-result {
 
     @media screen and (min-width: 1090px) {
-
-    }
+ }
 }
 
 .result {
 position: absolute;
 right: 80px;
-bottom: 139px;
+
+
+bottom: 475px;
     font-family: Montserrat Alternates;
     font-size: 11px;
     font-weight: 400;
+  
 @media screen and (min-width: 440px){
     position: absolute;
 right: 120px;
-bottom: 139px;
+bottom: 475px;
+
 }
 @media screen and (min-width: 579px){
     position: absolute;
 right: 185px;
-bottom: 139px;
+
+bottom: 475px;
+
 }
 @media screen and (min-width: 713px){
     position: absolute;
 right: 255px;
-   bottom: 139px;
+
+
+   bottom: 475px;
+
 }
 
 @media screen and (min-width: 855px){
     position: absolute;
 right: 335px;
-   bottom: 139px;
+   bottom: 475px;
 }
-@media screen and (min-width: 862px){
-    position: absolute;
-right: 345px;
-   bottom: 139px;
-}
+
+
     @media screen and (min-width: 1090px) {
   text-align: right;
     font-family: Montserrat Alternates;
     font-size: 12px;
-  
-    position: absolute;
-    top: 240px;
 
- 
      }
   
 }
