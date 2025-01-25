@@ -1,18 +1,18 @@
 <div class="backdrop-modal" data-modal>
   <div class="modal" id="modal">
+    <button class="modal__close-btn" id="closeModal" data-modal-close>
+      ╳
+    </button>
+    <p class="modal__text">
+      Привіт! 
+      Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
+      вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно
+      провести час!
+    </p>
     <form action="" class="modal__form">
-      <button class="modal__close-btn" id="closeModal" data-modal-close>
-        <svg class="modal__icon-close" width="15" height="15"></svg>
-      </button>
-      <p class="modal__text">
-        Привіт! 
-        Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
-        вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно
-        провести час!
-      </p>
       <p class="modal__task">Введіть своє ім’я:</p>
-      <input type="text" placeholder="Ваше ім’я..." class="modal__input" />
-      <button type="button" class="modal__btn" id="closeModal" data-modal-close-btn>Зберегти</button>
+      <input type="text" placeholder="Ваше ім’я..." class="modal__input" required/>
+      <button type="submit" class="modal__btn" id="closeModal" data-modal-close-btn>Зберегти</button>
     </form>
   </div>
   </div>

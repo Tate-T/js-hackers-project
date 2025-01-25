@@ -43,10 +43,11 @@
 
   &__close-btn{
     margin-left: 368px;
+    background: #fff;
+    border: none;
 
     @media screen and (max-width: 360px) {
       margin-left: 230px;
-  
     }
   }
 
@@ -59,5 +60,10 @@
     font-weight: 400;
     line-height: normal;
     padding-top: 33px;
+
+    @media screen and (max-width: 360px) {
+      padding-top: 20px;
+  
+    }
   }
 }

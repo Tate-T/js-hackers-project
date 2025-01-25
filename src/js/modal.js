@@ -16,13 +16,16 @@
 
 const form = document.querySelector(".modal__form");
 const inputName = document.querySelector(".modal__input");
-const userName = document.querySelector("#user-name");
+const userName = document.getElementById("#user-name-modal");
 const modal = document.querySelector('[data-modal]');
 const modalClose = document.querySelector('[data-modal-close]');
 
 form.addEventListener("submit", (event) => {
-event.preventDefault()
-userName.textContent = inputName.value;
+    event.preventDefault();
+    const name = inputName.value.trim();
+    if (name) {
+      userName.textContent = name;
+    }
 })
 
 
