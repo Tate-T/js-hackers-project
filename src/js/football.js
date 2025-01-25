@@ -38,3 +38,4 @@ function resetBall() {
   ball.style.left = '30px';
   ball.style.transform = 'translate(-50%, -50%)';
 }
+
