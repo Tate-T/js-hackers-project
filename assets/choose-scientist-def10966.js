@@ -11,3 +11,4 @@ const a=document.querySelector("#first-button"),l=document.querySelector("#secon
             <h3 class="scientist__name">${n.name} ${n.surname}</h3>
             <p class="scientist__years">${n.born}-${n.dead}</p>
       </li>`);const e=document.querySelectorAll(".scientist__checked");for(const n of e)n.classList.remove("scientist__checked")});
+//# sourceMappingURL=choose-scientist-def10966.js.map
