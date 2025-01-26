@@ -40,24 +40,22 @@
 }
 
 body {
-  @media screen and (max-width: 360px) {
-  }
+  @media screen and (max-width: 360px) {}
 
-  @media screen and (min-width: 768px) {
-  }
+  @media screen and (min-width: 768px) {}
 
   @media screen and (min-width: 1090px) {
-    background-image: url(../../img/left-bg-fone@1x-desctop.png),
-    url(../../img/right-bg-fone@1x-desctop.png);
-  background-size: contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: left, right;
+    background-image: url(../img/left-bg-fone@1x-desctop.png),
+      url(../img/right-bg-fone@1x-desctop.png);
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../../img/left-bg-fone@2x-desctop.png), url(../../img/right-bg-fone@2x-desctop.png);
-  }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../img/left-bg-fone@2x-desctop.png), url(../img/right-bg-fone@2x-desctop.png);
+    }
   }
 }
 
