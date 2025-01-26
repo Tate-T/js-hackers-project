@@ -9,8 +9,8 @@ let score = 0;
 field.addEventListener('click', (event) => {
   const clickX = event.clientX - field.offsetLeft;
   const clickY = event.clientY - field.offsetTop;
-  ball.style.top = `${clickY - ball.offsetHeight / 0.35}px`;
-  ball.style.left = `${clickX - ball.offsetWidth / 0.35}px`;
+  ball.style.top = `${clickY - ball.offsetHeight / 0.15}px`;
+  ball.style.left = `${clickX - ball.offsetWidth / 0.55}px`;
   setTimeout(() => {
     checkGoal();
   }, 500);
