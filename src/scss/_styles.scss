@@ -40,7 +40,14 @@
 }
 
 body {
-  background-image: url(../../img/left-bg-fone@1x-desctop.png),
+  @media screen and (max-width: 360px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1090px) {
+    background-image: url(../../img/left-bg-fone@1x-desctop.png),
     url(../../img/right-bg-fone@1x-desctop.png);
   background-size: contain;
   background-repeat: no-repeat, no-repeat;
@@ -50,6 +57,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url(../../img/left-bg-fone@2x-desctop.png), url(../../img/right-bg-fone@2x-desctop.png);
+  }
   }
 }
 

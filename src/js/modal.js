@@ -14,15 +14,16 @@
  }
 })()
 
-const form = document.querySelector(".modal__form");
 const inputName = document.querySelector(".modal__input");
-const userName = document.querySelector("#user-name");
-const modal = document.querySelector('[data-modal]');
-const modalClose = document.querySelector('[data-modal-close]');
+const userName = document.querySelector(".header__text");
+const modalBtn = document.querySelector(".modal__btn");
 
-form.addEventListener("submit", (event) => {
-event.preventDefault()
-userName.textContent = inputName.value;
-})
-
-
+modalBtn.addEventListener("click", (event) => {
+    event.preventDefault()
+    const name = inputName.value.trim();
+    if (name) {
+      userName.textContent = `Вітаємо, ${name}!`;
+    } else {
+        userName.textContent = `Вітаємо, User!`;
+      }
+  });
