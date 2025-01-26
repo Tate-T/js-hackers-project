@@ -1,2 +1,0 @@
-(()=>{const e={openModalThanks:document.querySelector("[data-thanks-open]"),closeModalThanks:document.querySelector("[data-thanks-close]"),modal:document.querySelector("[data-thanks]")};e.openModalThanks.addEventListener("click",a),e.closeModalThanks.addEventListener("click",a);function a(o){e.modal.classList.toggle("is-hidden"),e.closeModalThanks.preventDefault()}})();
-//# sourceMappingURL=thanks-65f595e9.js.map

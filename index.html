@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-hackers-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-hackers-project/assets/index-973165fe.css">
+    <link rel="stylesheet" href="/js-hackers-project/assets/index-90e47859.css">
   </head>
 
   <body>
@@ -134,7 +134,7 @@
       <span class="guess-number__change">
         <button type="submit" class="guess-number__btn-guess">
           <svg class="guess-number__search" width="15" height="15">
-            <use href="../img/icons.svg#icon-search"></use>
+            <use href="/js-hackers-project/assets/icons-952f0465.svg#icon-search"></use>
           </svg>
         </button>
       </span>
@@ -524,7 +524,7 @@
   <div class="footer__container container">
     <a class="footer__logo" href="#">
       <svg class="footer__icon" width="93" height="38">
-        <use href="../img/icons.svg#footer-logo"></use>
+        <use href="/js-hackers-project/assets/icons-952f0465.svg#footer-logo"></use>
       </svg>
     </a>
     <ul class="footer__list">
@@ -546,7 +546,7 @@
     </ul>
     <form action="" class="footer__registration">
       <input type="email" placeholder="Ваша ел. адреса..." class="footer__registration-email" required/>
-      <button type="button" class="footer__btn" data-thanks-open>Підписатись</button>
+      <button type="submit" class="footer__btn" data-thanks-open>Підписатись</button>
       <p class="footer__information">*Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті</p>
     </form>
   </div>
@@ -554,7 +554,6 @@
 
   <div class="backdrop-modal" data-modal>
   <div class="modal" id="modal">
-    <form action="" class="modal__form">
       <button class="modal__close-btn" id="closeModal" data-modal-close>
         ╳
       </button>
@@ -565,7 +564,8 @@
         провести час!
       </p>
       <p class="modal__task">Введіть своє ім’я:</p>
-      <input type="text" placeholder="Ваше ім’я..." class="modal__input" />
+      <form action="" class="modal__form">
+      <input type="text" placeholder="Ваше ім’я..." class="modal__input" id="#modal-input" required/>
       <button type="button" class="modal__btn" id="closeModal" data-modal-close-btn>Зберегти</button>
     </form>
   </div>
