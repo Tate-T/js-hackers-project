@@ -1,6 +1,5 @@
 <div class="backdrop-modal" data-modal>
   <div class="modal" id="modal">
-    <form action="" class="modal__form">
       <button class="modal__close-btn" id="closeModal" data-modal-close>
         ╳
       </button>
@@ -11,7 +10,8 @@
         провести час!
       </p>
       <p class="modal__task">Введіть своє ім’я:</p>
-      <input type="text" placeholder="Ваше ім’я..." class="modal__input" />
+      <form action="" class="modal__form">
+      <input type="text" placeholder="Ваше ім’я..." class="modal__input" id="#modal-input" required/>
       <button type="button" class="modal__btn" id="closeModal" data-modal-close-btn>Зберегти</button>
     </form>
   </div>

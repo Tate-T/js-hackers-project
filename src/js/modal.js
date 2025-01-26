@@ -14,7 +14,6 @@
  }
 })()
 
-const form = document.querySelector(".modal__form");
 const inputName = document.querySelector(".modal__input");
 const userName = document.getElementById("#user-name-modal");
 const modal = document.querySelector('[data-modal]');
@@ -29,3 +28,12 @@ form.addEventListener("submit", (event) => {
 })
 
 
+modalBtn.addEventListener("click", (event) => {
+    event.preventDefault()
+    const name = inputName.value.trim();
+    if (name) {
+      userName.textContent = `Вітаємо, ${name}!`;
+    } else {
+        userName.textContent = `Вітаємо, User!`;
+      }
+  });
