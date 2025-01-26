@@ -1,6 +1,7 @@
 .rps {
   padding-bottom: 36px;
   position: relative;
+  background-color: #fff;
 
 
 
@@ -28,7 +29,12 @@
 .rps-extended {
   padding-bottom: 36px;
   position: relative;
+  &__container {
+    background-color: #fff;
+  }
 
+  &__content {
+    background-color: #fff;}
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
