@@ -15,8 +15,18 @@
 })()
 
 const inputName = document.querySelector(".modal__input");
-const userName = document.querySelector(".header__text");
-const modalBtn = document.querySelector(".modal__btn");
+const userName = document.getElementById("#user-name-modal");
+const modal = document.querySelector('[data-modal]');
+const modalClose = document.querySelector('[data-modal-close]');
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = inputName.value.trim();
+    if (name) {
+      userName.textContent = name;
+    }
+})
+
 
 modalBtn.addEventListener("click", (event) => {
     event.preventDefault()

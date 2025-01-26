@@ -5,10 +5,17 @@
     }
 
     &__line {
-        width: 536px;
+        width: 236px;
+        margin: 0 auto 32px;
         height: 1px;
         background-color: #000;
-        margin: 0 auto 36px;
+
+        @media screen and (min-width: 768px) {
+            width: 536px;
+            margin-bottom: 36px;
+        }
+
+
     }
 
     &__wrapper {

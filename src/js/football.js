@@ -1,41 +1,41 @@
 
-const gameField = document.getElementById("game-field");
-const ball = document.getElementById("ball");
-const gates = document.getElementById("gates");
-const result = document.getElementById("football-result");
-const button = document.getElementById("football-button");
-const button2 = document.getElementById("football-button2");
-gameField.addEventListener("mousemove", (event) => {
-    const gameFieldRect = gameField.getBoundingClientRect();
+const field = document.getElementById('game-field');
+const ball = document.getElementById('ball');
+const scoreboard = document.getElementById('scoreboard');
+const goal = document.querySelector('.gates');
+let score = 0;
 
-    const x = event.clientX - gameFieldRect.left;
-    const y = event.clientY - gameFieldRect.top;
-    const maxX = Math.max(0, Math.min(x, gameFieldRect.width - ball.offsetWidth));
-    const maxY = Math.max(0, Math.min(y, gameFieldRect.height - ball.offsetHeight));
 
-    ball.style.left = `${maxX}px`;
-    ball.style.top = `${maxY}px`;
-    
-    
-    if(ball.style.left === "470.4px"){
-      button.style.display="block"
-    result.textContent  = "Молодець" ;
-    }else{
-
-    }
+field.addEventListener('click', (event) => {
+  const clickX = event.clientX - field.offsetLeft;
+  const clickY = event.clientY - field.offsetTop;
+  ball.style.top = `${clickY - ball.offsetHeight / 0.35}px`;
+  ball.style.left = `${clickX - ball.offsetWidth / 0.35}px`;
+  setTimeout(() => {
+    checkGoal();
+  }, 500);
 });
 
-if (button) {
 
-  button.id = "b_epr";
-  button.innerText = "Restart";
-  button.addEventListener("click", () => window.location.reload());
-  button.insertAdjacentElement("afterend", button);
-}
-if (button2) {
+function checkGoal() {
+  const ballRect = ball.getBoundingClientRect();
+  const goalRect = goal.getBoundingClientRect();
 
-    button2.id = "b_epr";
-    button2.innerText = "Restart";
-    button2.addEventListener("click", () => window.location.reload());
-    button2.insertAdjacentElement("afterend", button2);
+  if (ballRect.top >= goalRect.top && ballRect.left >= goalRect.left && ballRect.right <= goalRect.right && ballRect.bottom <= goalRect.bottom) {
+    score++;
+    updateScore();
+    resetBall();
   }
+
+}
+
+function updateScore() {
+  scoreboard.textContent = `Рахунок: ${score}`;
+}
+
+function resetBall() {
+  ball.style.top = '30px';
+  ball.style.left = '30px';
+  ball.style.transform = 'translate(-50%, -50%)';
+}
+
