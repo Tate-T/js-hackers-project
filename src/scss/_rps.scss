@@ -38,7 +38,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 20px; 
     justify-items: center;
     margin: 0 auto;
     max-width: 600px;
